@@ -12325,10 +12325,41 @@ gcijAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong><br>
-这三个样本点分别代表餐馆、超市、咖啡馆,
-22的记占得最大的量是新鲜产品，接下来是冷藏的食物，猜测是一家餐馆；<br>
-171的记录是新鲜商品占和冷藏食物占比最少，猜测是超市；<br>
-187记录是杂货和牛奶比较多，猜测是咖啡馆</p>
+结合上面的统计信息，可看出：<br>
+22记录的各个特征所在区间：</p>
+<ul>
+<li>Fresh位于<font color=red>75%~100%</font>；</li>
+<li>Milk位于25%~50%；</li>
+<li>Grocery位于25%~50%；</li>
+<li>Frozen位于<font color=red>75%~100%</font>；</li>
+<li>Detergents_Paper位于50%~75%；</li>
+<li>Delicatessen位于<font color=red>75%~100%</font>；</li>
+</ul>
+<p>171记录的各个特征所在区间：</p>
+<ul>
+<li>Fresh位于0%分~25%；</li>
+<li>Milk位于<font color=red>75%~100%</font>；</li>
+<li>Grocery位于<font color=red>75%~100%</font>；</li>
+<li>Frozen位于0%~25%；</li>
+<li>Detergents_Paper位于<font color=red>75%~100%</font>；</li>
+<li>Delicatessen位于<font color=red>75%~100%</font>；</li>
+</ul>
+<p>187记录的各个特征所在区间：</p>
+<ul>
+<li>Fresh位于0%分~25%；</li>
+<li>Milk位于<font color=red>75%~100%</font>；</li>
+<li>Grocery位于50%~75%；</li>
+<li>Frozen位于<font color=red>75%~100%</font>；</li>
+<li>Detergents_Paper位于50%~75%；</li>
+<li>Delicatessen位于0%~25%(并且是最小值)；</li>
+</ul>
+<p>22记录的Fresh、Frozen、Delicatessen三者都在75%~100%区间中；<br>
+171记录的Milk、Grocery、Detergents_Paper、Delicatessen四者都位于75%~100%区间中；<br>
+187记录的Milk、Frozen位于75%~100%之间。</p>
+<p>22记录的特点是所有事物的类型都在75%~100%区间，猜测是一家餐馆；<br>
+171记录的Milk、Grocery、Detergents_Paper、Delicatessen都在75%~100%区间内，而且新鲜商品占和冷藏食物占比最少，猜测是超市；<br>
+187记录的Milk、Frozen75%~100%，猜测是咖啡馆</p>
+<p>这三个样本点分别代表餐馆、超市、咖啡馆,</p>
 
 </div>
 </div>
@@ -22205,8 +22236,39 @@ IiFKDiIiEqLkICIiIf8fwdlrGEmNueEAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>回答:</strong><br>
-segment 0 主要消费点在Fresh、Milk、Frozen，这部分特点是食物，这类别代表是餐馆类客户；<br>
+<p><strong>回答:</strong></p>
+<p>各个特征对于两个segment的特征所在的区间：<br>
+Fresh</p>
+<ul>
+<li>segment 0：50%~100%，</li>
+<li>setment 1：0% ~50%,</li>
+</ul>
+<p>Milk</p>
+<ul>
+<li>segment 0：0%~50%，</li>
+<li>setment 1：50%~100%,</li>
+</ul>
+<p>Grocery</p>
+<ul>
+<li>segment 0：0%~50%，</li>
+<li>setment 1：50%~100%,</li>
+</ul>
+<p>Frozen</p>
+<ul>
+<li>segment 0：50%~100%，</li>
+<li>setment 1：0%~50%,</li>
+</ul>
+<p>Detergents_Paper</p>
+<ul>
+<li>segment 0：0%~50%，</li>
+<li>setment 1：50%~100%,</li>
+</ul>
+<p>Delicatessen</p>
+<ul>
+<li>segment 0：0%~50%，</li>
+<li>setment 1：50%~100%,</li>
+</ul>
+<p>segment 0 主要消费点在Fresh、Milk、Frozen，这部分特点是食物，这类别代表是餐馆类客户；<br>
 segment 1 的消费点在Grocery、Milk、Detergents_Paper这部分特点是可以存放久的，这类别代表超市性客户。</p>
 
 </div>
